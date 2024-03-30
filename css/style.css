@@ -32,7 +32,7 @@ img {
 }
 /*----------------------------------------header-styles---------------------------------------*/
 #header {
-	background: url(../images/bg-transparent1.png) repeat;
+	background: url(../images/resized/RedBlueNebula_Cropped.png") repeat;
 	margin: 0;
 	min-height: 60px;
 	padding: 0;
@@ -127,7 +127,7 @@ img {
 	width: auto;
 }
 #header div ul li.menu ul li a {
-	background-color: #620031;
+	background-color: #400000;
 	color: #ffffff;
 	display: block;
 	font-family: Arial;
@@ -241,7 +241,7 @@ img {
 	color: #ffffff;
 }
 #body.home .header div h3 {
-	background: url("../images/bg-transparent1.png") repeat;
+	background: url("../images/resized/RedBlueNebula_Cropped.png") repeat;
 	color: #A3A3A3;
 	float: left;
 	font-family: audiowide-regular-webfont;
@@ -519,7 +519,7 @@ img {
 }
 /*----------------------------------------body-styles---------------------------------------*/
 #body.about .header {
-	background: url(../images/bg-about.jpg) no-repeat center top #000000;
+	background: url(../images/resized/RedBlueNebula_Cropped.png) no-repeat center top #000000;
 	margin: 0;
 	min-height: 455px;
 	padding: 0;
@@ -548,9 +548,9 @@ img {
 	color: #FFFFFF;
 	display: block;
 	font-family: audiowide-regular-webfont;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: normal;
-	line-height: 32px;
+	line-height: 36px;
 	margin: 0 auto 24px;
 	padding: 0;
 	text-align: center;
@@ -603,7 +603,7 @@ img {
 	font-size: 23px;
 	font-weight: normal;
 	line-height: 23px;
-	margin: 18px 0 26px;
+	margin: 18px 0 8px;
 	padding: 0;
 	text-align: left;
 	text-transform: uppercase;
@@ -614,7 +614,7 @@ img {
 	display: block;
 	float: left;
 	font-family: Arial;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: normal;
 	line-height: 24px;
 	margin: 0;
