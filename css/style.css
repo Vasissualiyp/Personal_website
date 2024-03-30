@@ -105,11 +105,11 @@ img {
 	padding: 0;
 	position: absolute;
 	top: 60px;
-	width: 142px;
+	width: 140px;
 	z-index: 50;
 }
 #header div ul li.menu:hover ul.primary {
-	left: 31px;
+	left: 0px;
 }
 #header div ul li.menu ul.primary.selected {
 	left: 31px;
