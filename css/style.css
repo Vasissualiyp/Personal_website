@@ -6,7 +6,8 @@ body {
 	width: auto;
 }
 body #page {
-	background: url("../images/bg-home.jpg") no-repeat scroll center top #000000;
+	/* background: url("../images/resized/Space_bkg2.png") no-repeat scroll center top #000000; */
+	background: url("../images/resized/RedBlueNebula.png") no-repeat scroll center top #000000;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
@@ -39,7 +40,7 @@ img {
 }
 #header div {
 	margin: 0 auto;
-	max-width: 940px;
+	max-width: 1040px;
 	min-height: 60px;
 	padding: 0 10px;
 }
@@ -47,7 +48,7 @@ img {
 	display: block;
 	float: left;
 	height: 60px;
-	margin: 0 44px 0 0;
+	margin: 0 140px 0 0;
 	padding: 0;
 	width: 304px;
 }
@@ -1346,7 +1347,7 @@ img {
 	width: 18px;
 }
 #footer .connect div div a.github {
-    background: url(../images/github-icon.png) no-repeat;
+    background: url(../images/resized/github-icon.png) no-repeat;
     margin: 0 0 0 28px;
     width: 37px; /* Set this to the width of your new GitHub icon image */
     height: 37px; /* Set this to the height of your new GitHub icon image */
