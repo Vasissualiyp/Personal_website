@@ -1421,3 +1421,24 @@ img {
 #wix a img {
 	width: 100%;
 }
+/*----------------------------------------button-styles---------------------------------------*/
+.buttons {
+  text-align: center;
+  margin-top: 20px; /* Adjust the spacing as needed */
+}
+.button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #900000; /* Primary button color */
+  color: #fff; /* Text color */
+  text-decoration: none;
+  font-family: audiowide-regular-webfont;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 10px; /* Optional: for rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.button:hover {
+  background-color: #0056b3; /* Darker shade for hover state */
+}
