@@ -1345,15 +1345,19 @@ img {
 	text-indent: -99999px;
 	width: 18px;
 }
+#footer .connect div div a.github {
+    background: url(../images/github-icon.png) no-repeat;
+    margin: 0 0 0 28px;
+    width: 37px; /* Set this to the width of your new GitHub icon image */
+    height: 37px; /* Set this to the height of your new GitHub icon image */
+    display: block;
+    float: left;
+    text-indent: -99999px;
+}
 #footer .connect div div a.facebook {
 	background-position: 0 0;
 	margin: 0 0 0 16px;
 	width: 18px;
-}
-#footer .connect div div a.twitter {
-	background-position: 0 -114px;
-	margin: 0 0 0 28px;
-	width: 44px;
 }
 #footer .connect div div a.googleplus {
 	background-position: 0 -38px;
@@ -1367,9 +1371,6 @@ img {
 }
 #footer .connect div div a.facebook:hover {
 	background-position: -20px 0;
-}
-#footer .connect div div a.twitter:hover {
-	background-position: -46px -114px;
 }
 #footer .connect div div a.googleplus:hover {
 	background-position: -38px -38px;
