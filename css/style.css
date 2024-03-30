@@ -7,7 +7,7 @@ body {
 }
 body #page {
 	/* background: url("../images/resized/Space_bkg2.png") no-repeat scroll center top #000000; */
-	background: url("../images/resized/RedBlueNebula.png") no-repeat scroll center top #000000;
+	background: url("../images/resized/RedBlueNebula_Cropped.png") no-repeat scroll center top #000000;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
@@ -88,7 +88,7 @@ img {
 	width: auto;
 }
 #header div ul li a:hover {
-	background-color: #620031;
+	background-color: #900000;
 	color: #ffffff;
 }
 #header div ul li.selected a {
@@ -297,7 +297,7 @@ img {
 	opacity: 0.7;
 }
 #body.home .body {
-	background-color: #630031;
+	background-color: #9f0000;
 	margin: 0;
 	min-height: 168px;
 	overflow: hidden;
@@ -499,7 +499,7 @@ img {
 	width: 310px;
 }
 #body.home .footer div ul li ul li a.more {
-	background-color: #3c0f38;
+	background-color: #900038;
 	color: #ffffff;
 	display: block;
 	float: right;
@@ -583,7 +583,7 @@ img {
 	color: #a3a3a3;
 }
 #body.about .body {
-	background-color: #620031;
+	background-color: #9f0000;
 	margin: 0;
 	min-height: 253px;
 	overflow: hidden;
