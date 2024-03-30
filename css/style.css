@@ -523,7 +523,7 @@ img {
 }
 /*----------------------------------------body-styles---------------------------------------*/
 #body.about .header {
-	background: url(../images/resized/RedBlueNebula_Cropped.png) no-repeat center top #000000;
+	background: url(../images/resized/RedBlueNebula_Cropped.png) no-repeat center -60px #000000;
 	margin: 0;
 	min-height: 455px;
 	padding: 0;
