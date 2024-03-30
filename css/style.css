@@ -1430,15 +1430,18 @@ img {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #900000; /* Primary button color */
+  background-color: #000000; /* Primary button color */
   color: #fff; /* Text color */
   text-decoration: none;
   font-family: audiowide-regular-webfont;
   font-size: 40px;
   font-weight: bold;
-  border-radius: 10px; /* Optional: for rounded corners */
+  border: 10px solid #b00000;
+  border-radius: 5px; /* Optional: for rounded corners */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 .button:hover {
-  background-color: #0056b3; /* Darker shade for hover state */
+  background-color: #b00000; /* Darker shade for hover state */
+  border-color: #000000; /* Darker shade for hover state */
+
 }
