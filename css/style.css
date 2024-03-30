@@ -1355,6 +1355,15 @@ img {
     float: left;
     text-indent: -99999px;
 }
+#footer .connect div div a.github:hover {
+    background: url(../images/resized/github-icon_hover.png) no-repeat;
+    margin: 0 0 0 28px;
+    width: 37px; /* Set this to the width of your new GitHub icon image */
+    height: 37px; /* Set this to the height of your new GitHub icon image */
+    display: block;
+    float: left;
+    text-indent: -99999px;
+}
 #footer .connect div div a.facebook {
 	background-position: 0 0;
 	margin: 0 0 0 16px;
