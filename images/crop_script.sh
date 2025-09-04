@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+IN_NAME="nix.png"
+DIMENSIONS_AFTER_CROP="3840x1800"
+TOPLEFT_CORNER_AFTER_CROP="0+300"
+
+convert "initial/$IN_NAME" -crop \
+	"$DIMENSIONS_AFTER_CROP+$TOPLEFT_CORNER_AFTER_CROP" \
+	"resized/$IN_NAME"
