@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div id="body">
+	<div class="header">
+		<div>
+			<h1>{{ .Title }}</h1>
+			{{ .Content }}
+			
+			<div class="article">
+				<ul>
+					{{ range .Pages.ByDate.Reverse }}
+					<li>
+						<a href="{{ .Permalink }}">
+							<span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+							<h2>{{ .Title }}</h2>
+							{{ with .Params.summary }}
+							<p>{{ . }}</p>
+							{{ end }}
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+.article ul {
+	list-style: none;
+	padding: 0;
+}
+
+.article li {
+	margin-bottom: 2em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #eee;
+}
+
+.article li:last-child {
+	border-bottom: none;
+}
+
+.article h2 {
+	margin: 0.5em 0;
+	font-size: 1.5em;
+}
+
+.article .date {
+	color: #888;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.article p {
+	color: #555;
+	line-height: 1.6;
+}
+</style>
+{{ end }}

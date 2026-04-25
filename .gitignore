@@ -1,1 +1,14 @@
 talks/5D_Chess_Slides/
+
+# Hugo
+/hugo-site/public/
+/hugo-site/resources/
+.hugo_build.lock
+
+# Nix
+result
+result-*
+
+# OS
+.DS_Store
+Thumbs.db

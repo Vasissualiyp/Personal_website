@@ -1,0 +1,53 @@
+{{ define "main" }}
+<div id="body" class="home">
+	<div class="header">
+		<div>
+			<h1>Exploring the Cosmos</h1>
+			<h2>Vasilii Pustovoit's personal website</h2>
+			<a href="{{ "about" | relURL }}" class="more">Read More</a>
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<ul>
+				<li>
+					<h1>FEATURED VIDEO</h1>
+					<iframe id="ytplayer" type="text/html" width="440" height="240"
+					  src="https://www.youtube.com/embed/l1-yovgIFDs?autoplay=1&origin=http://example.com"
+					  frameborder="0"></iframe>
+				</li>
+				<li>
+					<h1>LATEST BLOG POSTS</h1>
+					<ul>
+						<li>
+							<a href="{{ "research/talks" | relURL }}"><img src="{{ "images/resized/test.png" | relURL }}" alt=""></a>
+							<h1>Check out my talks!</h1>
+							<span>JUNE 5, 2025</span>
+							<a href="{{ "research/talks" | relURL }}" class="more">Read More</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="header">
+	<div>
+	  <div class="buttons">
+		<a href="{{ "research" | relURL }}" class="button_blue">RESEARCH:</a>
+		<a href="{{ "research/talks" | relURL }}" class="button">Talks</a>
+		<a href="{{ "research/publications" | relURL }}" class="button">Publications</a>
+		<a href="{{ "research/code" | relURL }}" class="button">Code</a>
+	  </div>
+	</div>
+</div>
+<div class="header">
+	<div>
+	  <div class="buttons">
+		<a href="{{ "blog" | relURL }}" class="button_blue">BLOGS (EMPTY):</a>
+		<a href="{{ "blog/science" | relURL }}" class="button">Research</a>
+		<a href="{{ "blog/coding" | relURL }}" class="button">Programming</a>
+	  </div>
+	</div>
+</div>
+{{ end }}

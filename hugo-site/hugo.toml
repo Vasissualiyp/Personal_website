@@ -1,0 +1,68 @@
+baseURL = 'https://vasilii-pustovoit.com/'
+languageCode = 'en-us'
+title = 'Vasilii Pustovoit Personal Website'
+
+[params]
+  author = 'Vasilii Pustovoit'
+  description = "Exploring the Cosmos - Vasilii Pustovoit's personal website"
+  facebook = 'https://www.facebook.com/vasissualiy/'
+  github = 'https://github.com/Vasissualiyp'
+  linkedin = 'https://www.linkedin.com/in/vasilii-pustovoit-8ab041364/'
+  email = 'vpustovoit@cita.utoronto.ca'
+  copyright = '© 2024 Vasilii Pustovoit | All rights reserved.'
+
+[menu]
+  [[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+
+  [[menu.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 20
+
+  [[menu.main]]
+    name = 'Research'
+    pageRef = '/research'
+    weight = 30
+    
+  [[menu.main]]
+    name = 'Talks'
+    parent = 'Research'
+    pageRef = '/talks'
+    weight = 31
+
+  [[menu.main]]
+    name = 'Publications'
+    parent = 'Research'
+    pageRef = '/research/publications'
+    weight = 32
+
+  [[menu.main]]
+    name = 'Code'
+    parent = 'Research'
+    pageRef = '/research/code'
+    weight = 33
+
+  [[menu.main]]
+    name = 'Blogs'
+    pageRef = '/blog'
+    weight = 40
+
+  [[menu.main]]
+    name = 'Science'
+    parent = 'Blogs'
+    pageRef = '/blog/science'
+    weight = 41
+
+  [[menu.main]]
+    name = 'Coding'
+    parent = 'Blogs'
+    pageRef = '/blog/coding'
+    weight = 42
+
+  [[menu.main]]
+    name = 'Contact'
+    pageRef = '/contact'
+    weight = 50

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{{ "css/mobile.css" | relURL }}">
+	<script src="{{ "js/mobile.js" | relURL }}" type="text/javascript"></script>
+</head>
+<body>
+	<div id="page">
+		{{ partial "header.html" . }}
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer.html" . }}
+	</div>
+</body>
+</html>

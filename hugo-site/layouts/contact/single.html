@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div id="body">
+	<div class="header">
+		<div class="contact">
+			<h1>Contact</h1>
+			<h2>
+				I can be reached by email: {{ .Site.Params.email }}
+			</h2>
+			<h2>
+			You can also find me on
+			<a href="{{ .Site.Params.linkedin }}">LinkedIn</a>
+			Or any socials in the page footnote
+			</h2>
+		</div>
+	</div>
+</div>
+{{ end }}

@@ -1,0 +1,26 @@
+<div id="header">
+	<div>
+		<a href="{{ "/" | relURL }}" class="logo"><img src="{{ "images/resized/logo.png" | relURL }}" alt="Vasilii Pustovoit Logo"></a>
+		<ul id="navigation">
+			{{ $currentPage := . }}
+			{{ range .Site.Menus.main }}
+				{{ if not .HasChildren }}
+					<li{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} class="selected"{{ end }}>
+						<a href="{{ .URL }}">{{ .Name }}</a>
+					</li>
+				{{ else }}
+					<li class="menu{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} selected{{ end }}">
+						<a href="{{ .URL }}">{{ .Name }}</a>
+						<ul class="primary">
+							<li>
+							{{ range .Children }}
+								<a href="{{ .URL }}">{{ .Name }}</a>
+							{{ end }}
+							</li>
+						</ul>
+					</li>
+				{{ end }}
+			{{ end }}
+		</ul>
+	</div>
+</div>

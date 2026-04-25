@@ -1,0 +1,87 @@
+{{ define "main" }}
+<div id="body">
+	<div class="header">
+		<div>
+			<h1>{{ .Title }}</h1>
+			<div class="article">
+				<ul>
+					{{ range .Pages.ByDate.Reverse }}
+					<li>
+						{{ with .Params.image }}
+						<a href="{{ $.Permalink }}">
+							<img src="{{ . | relURL }}" alt="" style="max-width: 85%; height: auto;">
+						</a>
+						{{ end }}
+						<h1>{{ .Params.venue | upper }}</h1>
+						<span>{{ .Date.Format "JANUARY 2, 2006" | upper }}</span>
+						<p>
+							Title: {{ .Title }}
+						</p>
+						{{ with .Params.summary }}
+						<p>{{ . }}</p>
+						{{ end }}
+						<a href="{{ .Permalink }}" class="more">Read More</a>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+.article ul {
+	list-style: none;
+	padding: 0;
+}
+
+.article li {
+	margin-bottom: 3em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #eee;
+}
+
+.article li:last-child {
+	border-bottom: none;
+}
+
+.article li h1 {
+	font-size: 1.2em;
+	margin: 1em 0 0.5em 0;
+	color: #333;
+}
+
+.article li span {
+	color: #888;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.article li p {
+	color: #555;
+	line-height: 1.6;
+	margin: 0.5em 0;
+}
+
+.article li img {
+	display: block;
+	margin: 0 auto;
+}
+
+.more {
+	display: inline-block;
+	margin-top: 0.5em;
+	padding: 0.5em 1em;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 3px;
+}
+
+.more:hover {
+	background: #555;
+}
+</style>
+{{ end }}
