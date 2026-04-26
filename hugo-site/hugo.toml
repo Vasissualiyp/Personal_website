@@ -30,7 +30,7 @@ title = 'Vasilii Pustovoit Personal Website'
   [[menu.main]]
     name = 'Talks'
     parent = 'Research'
-    pageRef = '/talks'
+    pageRef = '/research/talks'
     weight = 31
 
   [[menu.main]]

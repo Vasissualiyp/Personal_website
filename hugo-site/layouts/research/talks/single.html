@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div id="body">
+	<div class="header">
+		<div>
+			<h1>Talks</h1>
+			<div class="article">
+				{{ with .Params.image }}
+				<img src="{{ . | relURL }}" alt="" style="max-width: 100%; height: auto;">
+				{{ end }}
+				<h1>{{ .Params.venue | upper }}</h1>
+				<span>{{ .Date.Format "JANUARY 2, 2006" | upper }}</span>
+				{{ .Content }}
+				{{ with .Params.pdf }}
+				<p><a href="{{ . }}" download>Download PDF</a></p>
+				{{ end }}
+				{{ with .Params.github }}
+				<p><a href="{{ . }}" target="_blank">GitHub Repository</a></p>
+				{{ end }}
+				{{ with .Params.slides }}
+				<p><a href="{{ . }}" target="_blank">View Slides</a></p>
+				{{ end }}
+				<p><a href="/research/talks/">&larr; Back to All Talks</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+{{ end }}

@@ -9,7 +9,7 @@
 				<ul>
 					{{ range .Pages.ByDate.Reverse }}
 					<li>
-						<a href="{{ .Permalink }}">
+						<a href="{{ .RelPermalink }}">
 							<span class="date">{{ .Date.Format "January 2, 2006" }}</span>
 							<h2>{{ .Title }}</h2>
 							{{ with .Params.summary }}
